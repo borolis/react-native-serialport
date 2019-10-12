@@ -1,0 +1,53 @@
+{
+  "_from": "git+ssh://git@github.com/borolis/react-native-serialport-hacked.git",
+  "_id": "react-native-serialport@1.3.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-serialport",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+ssh://git@github.com:borolis/react-native-serialport-hacked.git",
+    "rawSpec": "git+ssh://git@github.com:borolis/react-native-serialport-hacked.git",
+    "saveSpec": "git+ssh://git@github.com/borolis/react-native-serialport-hacked.git",
+    "fetchSpec": "ssh://git@github.com/borolis/react-native-serialport-hacked.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+ssh://git@github.com/borolis/react-native-serialport-hacked.git#bfd83453af7ca54bf8f04f4d0460863393db76fb",
+  "_spec": "git+ssh://git@github.com:borolis/react-native-serialport-hacked.git",
+  "_where": "/Users/georgijguba/e-check-tablet",
+  "author": {
+    "name": "Melih YARIKKAYA"
+  },
+  "bugs": {
+    "url": "https://github.com/melihyarikkaya/react-native-serialport/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "This library is for usb serial port communication on android platforms",
+  "homepage": "https://github.com/melihyarikkaya/react-native-serialport.git",
+  "keywords": [
+    "react-native-serialport",
+    "android serialport",
+    "react native usb serialport communication"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-serialport",
+  "peerDependencies": {
+    "react-native": "^0.59.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melihyarikkaya/react-native-serialport.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "./types/index.d.ts",
+  "version": "1.3.0"
+}
