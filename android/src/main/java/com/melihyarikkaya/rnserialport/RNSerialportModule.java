@@ -336,6 +336,33 @@ public class RNSerialportModule extends ReactContextBaseJavaModule
 //        eventEmit(onServiceStopped, null);
     }
 
+@ReactMethod
+  public void writeString(String deviceName, String message)
+  {
+    SerialConnection connectionByName = getConnectionByName(deviceName);
+
+    if(connectionByName == null)
+    {
+    eventEmit(onErrorEvent, createError(Definitions.ERROR_THERE_IS_NO_CONNECTION,
+            Definitions.ERROR_THERE_IS_NO_CONNECTION_MESSAGE));
+    return;
+    }
+
+    if(!connectionByName.isOpened())
+    {
+    eventEmit(onErrorEvent, createError(Definitions.ERROR_THERE_IS_NO_CONNECTION,
+            Definitions.ERROR_THERE_IS_NO_CONNECTION_MESSAGE));
+    return;
+    }
+
+    if (message.length() < 1)
+    {
+    return;
+    }
+    connectionByName.writeBytes(message.getBytes());
+  }
+
+
     @ReactMethod
     public void writeHexString(String deviceName, String message)
     {
